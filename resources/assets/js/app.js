@@ -16,7 +16,7 @@ import CompaniesIndex from './components/companies/CompaniesIndex.vue';
 import CompaniesCreate from './components/companies/CompaniesCreate.vue';
 import CompaniesEdit from './components/companies/CompaniesEdit.vue';
 
-import ProfileIndex from './components/profiles/ProfileIndex.vue';
+import Index from './components/profiles/Index.vue';
 import ProfileEdit from './components/profiles/ProfileEdit.vue';
 
 const routes = [
@@ -28,9 +28,9 @@ const routes = [
         
     },
     {
-    	path: '/',
+    	path: '/h',
     	components: {
-            profileIndex: ProfileIndex
+            Index: Index
         },
     },
     {path: '/admin/companies/create', component: CompaniesCreate, name: 'createCompany'},
